@@ -6,13 +6,10 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 
-def _init():
+def plugin_load_uwsgi():
     from pytsite import lang
     from plugins import auth_ui
     from . import _driver
 
     lang.register_package(__name__)
     auth_ui.register_driver(_driver.Password())
-
-
-_init()
