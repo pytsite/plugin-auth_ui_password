@@ -16,6 +16,7 @@
     "packages": [],
     "plugins": [
       "auth_ui",
+      "auth_password",
       "assetman",
       "font_awesome",
       "form",
