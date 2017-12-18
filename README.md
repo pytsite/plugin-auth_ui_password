@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.1.2 (2017-12-18)
+
+plugin.json fixed.
+
+
 ### 1.1.1 (2017-12-18)
 
 Requirements list fixed.
