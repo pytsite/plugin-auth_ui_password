@@ -70,7 +70,7 @@ class Password(_auth_ui.Driver):
     def get_sign_in_form(self, **kwargs) -> _form.Form:
         """Get the login form.
         """
-        _assetman.preload('twitter-bootstrap-{}', _reg.get('auth_ui_password.twitter_bootstrap_version', 4))
+        _assetman.preload('twitter-bootstrap-{}'.format(_reg.get('auth_ui_password.twitter_bootstrap_version', 4)))
         _assetman.preload('font-awesome')
 
         return _SignInForm(**kwargs)

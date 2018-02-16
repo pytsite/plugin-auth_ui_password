@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.2.1 (2018-02-16)
+
+Typo fixed.
+
+
 ### 1.2 (2018-02-16)
 
 New configuration option `auth_ui_password.twitter_bootstrap_version`
