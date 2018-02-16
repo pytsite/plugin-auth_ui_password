@@ -4,6 +4,12 @@
 ## Changelog
 
 
+### 1.2 (2018-02-16)
+
+New configuration option `auth_ui_password.twitter_bootstrap_version`
+added.
+
+
 ### 1.1.2 (2017-12-18)
 
 plugin.json fixed.

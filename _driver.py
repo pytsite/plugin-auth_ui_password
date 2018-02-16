@@ -1,11 +1,11 @@
 """PytSite Password Authentication UI Driver
 """
-from pytsite import router as _router, lang as _lang
-from plugins import widget as _widget, form as _form, auth_ui as _auth_ui, assetman as _assetman
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from pytsite import router as _router, lang as _lang, reg as _reg
+from plugins import widget as _widget, form as _form, auth_ui as _auth_ui, assetman as _assetman
 
 
 class _SignInForm(_form.Form):
@@ -70,7 +70,7 @@ class Password(_auth_ui.Driver):
     def get_sign_in_form(self, **kwargs) -> _form.Form:
         """Get the login form.
         """
-        _assetman.preload('twitter-bootstrap-4')
+        _assetman.preload('twitter-bootstrap-{}', _reg.get('auth_ui_password.twitter_bootstrap_version', 4))
         _assetman.preload('font-awesome')
 
         return _SignInForm(**kwargs)

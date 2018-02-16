@@ -1,12 +1,11 @@
 """PytSite Password Authentication UI Driver Plugin
 """
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 
-def plugin_load_uwsgi():
+def plugin_load_wsgi():
     from pytsite import lang
     from plugins import auth_ui
     from . import _driver
