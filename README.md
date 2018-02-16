@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.2.2 (2018-02-16)
+
+Twitter Bootstrap 3 support fixed.
+
+
 ### 1.2.1 (2018-02-16)
 
 Typo fixed.
