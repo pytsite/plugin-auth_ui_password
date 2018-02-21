@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.2.3 (2018-02-21)
+
+Twitter Bootstrap Version setting fixed.
+
+
 ### 1.2.2 (2018-02-16)
 
 Twitter Bootstrap 3 support fixed.

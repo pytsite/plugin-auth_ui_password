@@ -7,8 +7,6 @@ __license__ = 'MIT'
 from pytsite import router as _router, lang as _lang, reg as _reg
 from plugins import widget as _widget, form as _form, auth_ui as _auth_ui, assetman as _assetman
 
-_BS_VERSION = _reg.get('auth_ui_password.twitter_bootstrap_version', 4)
-
 
 class _SignInForm(_form.Form):
     """Password Sign In Form
@@ -22,10 +20,12 @@ class _SignInForm(_form.Form):
     def _on_setup_widgets(self):
         """Hook
         """
+        _bs_version = _reg.get('auth_ui_password.twitter_bootstrap_version', 4)
+
         for k, v in _router.request().inp.items():
             self.add_widget(_widget.input.Hidden(uid=self.uid + '-' + k, name=k, value=v, form_area='hidden'))
 
-        if _BS_VERSION == 3:
+        if _bs_version == 3:
             self.add_widget(_widget.input.Email(
                 uid='login',
                 weight=10,
@@ -96,7 +96,7 @@ class Password(_auth_ui.Driver):
     def get_sign_in_form(self, **kwargs) -> _form.Form:
         """Get the login form.
         """
-        _assetman.preload('twitter-bootstrap-{}'.format(_BS_VERSION))
+        _assetman.preload('twitter-bootstrap-{}'.format(_reg.get('auth_ui_password.twitter_bootstrap_version', 4)))
         _assetman.preload('font-awesome')
 
         return _SignInForm(**kwargs)

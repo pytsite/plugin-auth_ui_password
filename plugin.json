@@ -1,6 +1,6 @@
 {
   "name": "auth_ui_password",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": {
     "en": "Password Authentication UI Driver",
     "ru": "Password Authentication UI Driver",
