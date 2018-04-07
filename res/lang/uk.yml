@@ -1,3 +1,12 @@
 login: 'Логін'
+email: 'Email'
 password: 'Пароль'
+password_confirm: 'Підтвердження пароля'
 sign_in: 'Увійти'
+sign_in_form_propose: "Ще не зареєстровані? <a href=\":url\">Створіть</a> власний аккаунт."
+sign_up: 'Зареєструватися'
+sign_up_form_propose: "Вже зареєстровані? <a href=\":url\">Увійдіть</a>."
+passwords_not_match: 'Паролі не співпадають'
+login_already_taken: 'Цей email вже зайнятий, спробуйте інший'
+first_name: "Ім'я"
+last_name: 'Прізвище'

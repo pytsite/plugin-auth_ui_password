@@ -1,3 +1,12 @@
 login: 'Login'
+email: 'Email'
 password: 'Password'
+password_confirm: 'Confirm password'
 sign_in: 'Sign In'
+sign_in_form_propose: "Don't have an account? <a href=\":url\">Create</a> a new one."
+sign_up: 'Sign Up'
+sign_up_form_propose: "Already have an account? <a href=\":url\">Sign In</a>."
+passwords_not_match: "Passwords don't match"
+login_already_taken: 'This email already taken, try to use another one'
+first_name: 'First name'
+last_name: 'Last name'

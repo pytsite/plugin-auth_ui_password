@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.0 (2018-04-07)
+
+Support of `auth-2.1` and `auth_ui-2.6`.
+
+
 ### 1.2.3 (2018-02-21)
 
 Twitter Bootstrap Version setting fixed.

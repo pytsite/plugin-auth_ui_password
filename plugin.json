@@ -1,6 +1,6 @@
 {
   "name": "auth_ui_password",
-  "version": "1.2.3",
+  "version": "2.0",
   "description": {
     "en": "Password Authentication UI Driver",
     "ru": "Password Authentication UI Driver",
@@ -13,9 +13,9 @@
     "url": "https://shepetko.com"
   },
   "requires": {
-    "packages": [],
     "plugins": [
-      "auth_ui",
+      "auth>=2.1",
+      "auth_ui>=2.6",
       "auth_password",
       "assetman",
       "font_awesome",
