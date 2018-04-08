@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.0.2 (2018-04-08)
+
+JS code fixed.
+
+
 ### 2.0.1 (2018-04-08)
 
 Widgets initialization fixed.
