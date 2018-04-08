@@ -32,7 +32,7 @@ class _SignInForm(_form.Form):
             placeholder=_lang.t('auth_ui_password@email'),
             prepend='<i class="fa fa-fw fa-envelope"></i>',
             h_size='col col-sm-6' if _bs_ver == 4 else 'col-sm-6 col-sm-offset-3',
-            h_size_row_css='justify-content-center' if _bs_ver == 4 else None,
+            h_size_row_css='justify-content-center' if _bs_ver == 4 else '',
             h_size_label=True,
             required=True,
             value=_router.request().inp.get('login', ''),
@@ -44,7 +44,7 @@ class _SignInForm(_form.Form):
             placeholder=_lang.t('auth_ui_password@password'),
             prepend='<i class="fa fa-fw fa-lock"></i>',
             h_size='col col-sm-6' if _bs_ver == 4 else 'col-sm-6 col-sm-offset-3',
-            h_size_row_css='justify-content-center' if _bs_ver == 4 else None,
+            h_size_row_css='justify-content-center' if _bs_ver == 4 else '',
             h_size_label=True,
             required=True,
         ))
@@ -56,7 +56,7 @@ class _SignInForm(_form.Form):
                 weight=30,
                 title=_lang.t('auth_ui_password@sign_in_form_propose', {'url': sign_up_url}),
                 h_size='col col-sm-6' if _bs_ver == 4 else 'col-sm-6 col-sm-offset-3',
-                h_size_row_css='justify-content-center' if _bs_ver == 4 else None,
+                h_size_row_css='justify-content-center' if _bs_ver == 4 else '',
                 css='text-center',
             ))
 
@@ -81,7 +81,7 @@ class _SignUpForm(_form.Form):
             placeholder=_lang.t('auth_ui_password@email'),
             prepend='<i class="fa fa-fw fa-envelope"></i>',
             h_size='col col-sm-6' if _bs_ver == 4 else 'col-sm-6 col-sm-offset-3',
-            h_size_row_css='justify-content-center' if _bs_ver == 4 else None,
+            h_size_row_css='justify-content-center' if _bs_ver == 4 else '',
             h_size_label=True,
             required=True,
             value=_router.request().inp.get('login', ''),
@@ -93,7 +93,7 @@ class _SignUpForm(_form.Form):
             placeholder=_lang.t('auth_ui_password@password'),
             prepend='<i class="fa fa-fw fa-lock"></i>',
             h_size='col col-sm-6' if _bs_ver == 4 else 'col-sm-6 col-sm-offset-3',
-            h_size_row_css='justify-content-center' if _bs_ver == 4 else None,
+            h_size_row_css='justify-content-center' if _bs_ver == 4 else '',
             h_size_label=True,
             required=True,
         ))
@@ -104,7 +104,7 @@ class _SignUpForm(_form.Form):
             placeholder=_lang.t('auth_ui_password@password_confirm'),
             prepend='<i class="fa fa-fw fa-lock"></i>',
             h_size='col col-sm-6' if _bs_ver == 4 else 'col-sm-6 col-sm-offset-3',
-            h_size_row_css='justify-content-center' if _bs_ver == 4 else None,
+            h_size_row_css='justify-content-center' if _bs_ver == 4 else '',
             h_size_label=True,
             required=True,
         ))
@@ -115,7 +115,7 @@ class _SignUpForm(_form.Form):
             placeholder=_lang.t('auth_ui_password@first_name'),
             prepend='<i class="fa fa-fw fa-address-book"></i>',
             h_size='col col-sm-6' if _bs_ver == 4 else 'col-sm-6 col-sm-offset-3',
-            h_size_row_css='justify-content-center' if _bs_ver == 4 else None,
+            h_size_row_css='justify-content-center' if _bs_ver == 4 else '',
             h_size_label=True,
             required=True,
         ))
@@ -126,7 +126,7 @@ class _SignUpForm(_form.Form):
             placeholder=_lang.t('auth_ui_password@last_name'),
             prepend='<i class="fa fa-fw fa-address-book"></i>',
             h_size='col col-sm-6' if _bs_ver == 4 else 'col-sm-6 col-sm-offset-3',
-            h_size_row_css='justify-content-center' if _bs_ver == 4 else None,
+            h_size_row_css='justify-content-center' if _bs_ver == 4 else '',
             h_size_label=True,
             required=True,
         ))
@@ -137,7 +137,7 @@ class _SignUpForm(_form.Form):
             weight=60,
             title=_lang.t('auth_ui_password@sign_up_form_propose', {'url': sign_in_url}),
             h_size='col col-sm-6' if _bs_ver == 4 else 'col-sm-6 col-sm-offset-3',
-            h_size_row_css='justify-content-center' if _bs_ver == 4 else None,
+            h_size_row_css='justify-content-center' if _bs_ver == 4 else '',
             css='text-center',
         ))
 

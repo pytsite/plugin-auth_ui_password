@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.0.1 (2018-04-08)
+
+Widgets initialization fixed.
+
+
 ### 2.0 (2018-04-07)
 
 Support of `auth-2.1` and `auth_ui-2.6`.
