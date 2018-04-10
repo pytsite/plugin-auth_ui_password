@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.0.3 (2018-04-10)
+
+Form's redirect issue fixed.
+
+
 ### 2.0.2 (2018-04-08)
 
 JS code fixed.

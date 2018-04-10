@@ -70,7 +70,6 @@ class _SignUpForm(_form.Form):
         """Hook
         """
         self.area_footer_css = 'text-center'
-        self.redirect = _auth_ui.sign_in_url('password')
 
     def _on_setup_widgets(self):
         """Hook
