@@ -14,7 +14,7 @@ class _SignInForm(_form.Form):
     """Password Sign In Form
     """
 
-    def _on_setup_form(self, **kwargs):
+    def _on_setup_form(self):
         """Hook
         """
         self.data['bs-version'] = _bs_ver
@@ -66,7 +66,7 @@ class _SignInForm(_form.Form):
 
 
 class _SignUpForm(_form.Form):
-    def _on_setup_form(self, **kwargs):
+    def _on_setup_form(self):
         """Hook
         """
         self.area_footer_css = 'text-center'

@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.1 (2018-04-25)
+
+Support of `form-3.0` added.
+
+
 ### 2.0.3 (2018-04-10)
 
 Form's redirect issue fixed.
