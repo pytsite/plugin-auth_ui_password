@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.2.1 (2018-05-06)
+
+`plugin.json` fixed.
+
+
 ### 2.2 (2018-05-06)
 
 - Support of PytSite-7.17, `auth_ui-3.2`, `form-4.0`.
@@ -58,7 +63,7 @@ added.
 
 ### 1.1.2 (2017-12-18)
 
-plugin.json fixed.
+`plugin.json` fixed.
 
 
 ### 1.1.1 (2017-12-18)
