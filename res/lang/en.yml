@@ -1,6 +1,7 @@
 login: 'Login'
 email: 'Email'
 password: 'Password'
+new_password: 'New password'
 password_confirm: 'Confirm password'
 sign_in: 'Sign In'
 sign_in_form_propose: "Don't have an account? <a href=\":url\">Create</a> a new one."
@@ -10,3 +11,8 @@ passwords_not_match: "Passwords don't match"
 login_already_taken: 'This email already taken, try to use another one'
 first_name: 'First name'
 last_name: 'Last name'
+reset_password_propose: "Lost password? Try to <a href=\":url\">reset</a> it."
+reset_password: 'Reset password'
+reset_password_mail_subject: 'Reset password on the {:app_name}'
+check_email_for_instructions: 'Please check your email for further instructions'
+reset_password_success: 'New password has been successfully set'

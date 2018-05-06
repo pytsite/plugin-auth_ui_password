@@ -1,6 +1,7 @@
 login: 'Логін'
 email: 'Email'
 password: 'Пароль'
+new_password: 'Новий пароль'
 password_confirm: 'Підтвердження пароля'
 sign_in: 'Увійти'
 sign_in_form_propose: "Ще не зареєстровані? <a href=\":url\">Створіть</a> власний аккаунт."
@@ -10,3 +11,8 @@ passwords_not_match: 'Паролі не співпадають'
 login_already_taken: 'Цей email вже зайнятий, спробуйте інший'
 first_name: "Ім'я"
 last_name: 'Прізвище'
+reset_password_propose: "Забули пароль? Спробуйте <a href=\":url\">відновити</a> його."
+reset_password: 'Скидання пароля'
+reset_password_mail_subject: 'Скидання пароля на {:app_name}'
+check_email_for_instructions: 'Будь ласка, перевірте свій email і дотримуйтесь інструкцій, зазначених у повідомленні'
+reset_password_success: 'Пароль було успішно змінено'

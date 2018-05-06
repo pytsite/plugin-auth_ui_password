@@ -4,9 +4,15 @@
 ## Changelog
 
 
+### 2.2 (2018-05-06)
+
+- Support of PytSite-7.17, `auth_ui-3.2`, `form-4.0`.
+- Reset password form added.
+
+
 ### 2.1 (2018-04-25)
 
-Support of `form-3.0` added.
+Support of `form-3.0`.
 
 
 ### 2.0.3 (2018-04-10)

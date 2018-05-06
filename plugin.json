@@ -13,13 +13,14 @@
     "url": "https://shepetko.com"
   },
   "requires": {
+    "pytsite": ">=7.17",
     "plugins": [
       "auth>=2.1",
-      "auth_ui>=2.8.1",
+      "auth_ui>=3.2",
       "auth_password",
       "assetman",
       "font_awesome",
-      "form>=3.0",
+      "form>=4.0",
       "twitter_bootstrap",
       "widget"
     ]
