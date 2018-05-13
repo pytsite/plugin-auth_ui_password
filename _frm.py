@@ -6,7 +6,7 @@ __license__ = 'MIT'
 
 from pytsite import reg as _reg, router as _router, lang as _lang, cache as _cache, util as _util, tpl as _tpl, \
     mail as _mail, http as _http
-from plugins import form as _form, assetman as _assetman, widget as _widget, auth as _auth
+from plugins import form as _form, widget as _widget, auth as _auth
 
 _BS_VER = _reg.get('auth_ui_password.twitter_bootstrap_version', 4)
 _RESET_TOKENS_POOL = _cache.get_pool('auth_ui_password.reset_password_tokens')
@@ -23,9 +23,11 @@ class SignIn(_form.Form):
         self.data['bs-version'] = _BS_VER
         self.area_footer_css = 'text-center'
 
-        _assetman.preload('auth_ui_password@js/form.js')
-        _assetman.preload('twitter-bootstrap-{}'.format(_BS_VER))
-        _assetman.preload('font-awesome')
+        self.assets.extend([
+            'auth_ui_password@js/form.js',
+            'twitter-bootstrap-{}'.format(_BS_VER),
+            'font-awesome',
+        ])
 
     def _on_setup_widgets(self):
         """Hook
@@ -86,10 +88,11 @@ class SignUp(_form.Form):
         """
         self.data['bs-version'] = _BS_VER
         self.area_footer_css = 'text-center'
-
-        _assetman.preload('auth_ui_password@js/form.js')
-        _assetman.preload('twitter-bootstrap-{}'.format(_BS_VER))
-        _assetman.preload('font-awesome')
+        self.assets.extend([
+            'auth_ui_password@js/form.js',
+            'twitter-bootstrap-{}'.format(_BS_VER),
+            'font-awesome',
+        ])
 
     def _on_setup_widgets(self):
         """Hook
@@ -192,10 +195,11 @@ class RestoreAccount(_form.Form):
         """
         self.data['bs-version'] = _BS_VER
         self.area_footer_css = 'text-center'
-
-        _assetman.preload('auth_ui_password@js/form.js')
-        _assetman.preload('twitter-bootstrap-{}'.format(_BS_VER))
-        _assetman.preload('font-awesome')
+        self.assets.extend([
+            'auth_ui_password@js/form.js',
+            'twitter-bootstrap-{}'.format(_BS_VER),
+            'font-awesome',
+        ])
 
     def _on_setup_widgets(self):
         """Hook
@@ -240,16 +244,17 @@ class SetNewPassword(_form.Form):
     def _on_setup_form(self):
         """Hook
         """
-        if not _RESET_TOKENS_POOL.has(self.attrs['token']):
+        if not _RESET_TOKENS_POOL.has(self.attr('token')):
             raise RuntimeError('Invalid token')
 
         self.data['bs-version'] = _BS_VER
         self.area_footer_css = 'text-center'
         self.title = _lang.t('auth_ui_password@reset_password')
-
-        _assetman.preload('auth_ui_password@js/form.js')
-        _assetman.preload('twitter-bootstrap-{}'.format(_BS_VER))
-        _assetman.preload('font-awesome')
+        self.assets.extend([
+            'auth_ui_password@js/form.js',
+            'twitter-bootstrap-{}'.format(_BS_VER),
+            'font-awesome',
+        ])
 
     def _on_setup_widgets(self):
         self.add_widget(_widget.input.Password(
