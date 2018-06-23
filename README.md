@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.4.1 (2018-06-23)
+
+Reset password form CSS fixed.
+
+
 ### 2.4 (2018-06-23)
 
 - Support of `font_awesome-2.0`.

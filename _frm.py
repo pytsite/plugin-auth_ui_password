@@ -243,6 +243,7 @@ class SetNewPassword(_form.Form):
         if not _RESET_TOKENS_POOL.has(self.attr('token')):
             raise RuntimeError('Invalid token')
 
+        self.css += ' auth-ui-form'
         self.title_css = 'text-center'
         self.area_footer_css = 'text-center'
         self.title = _lang.t('auth_ui_password@reset_password')
