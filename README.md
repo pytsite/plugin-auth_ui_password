@@ -4,6 +4,12 @@
 ## Changelog
 
 
+### 2.4 (2018-06-23)
+
+- Support of `font_awesome-2.0`.
+- Forms layout little fix-ups.
+
+
 ### 2.3 (2018-05-13)
 
 - Support of `form-4.1`.

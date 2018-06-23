@@ -20,13 +20,11 @@ class SignIn(_form.Form):
     def _on_setup_form(self):
         """Hook
         """
-        self.data['bs-version'] = _BS_VER
+        self.title_css = 'text-center'
         self.area_footer_css = 'text-center'
-
         self.assets.extend([
-            'auth_ui_password@js/form.js',
             'twitter-bootstrap-{}'.format(_BS_VER),
-            'font-awesome',
+            'font-awesome-4',
         ])
 
     def _on_setup_widgets(self):
@@ -86,12 +84,11 @@ class SignUp(_form.Form):
     def _on_setup_form(self):
         """Hook
         """
-        self.data['bs-version'] = _BS_VER
+        self.title_css = 'text-center'
         self.area_footer_css = 'text-center'
         self.assets.extend([
-            'auth_ui_password@js/form.js',
             'twitter-bootstrap-{}'.format(_BS_VER),
-            'font-awesome',
+            'font-awesome-4',
         ])
 
     def _on_setup_widgets(self):
@@ -193,12 +190,11 @@ class RestoreAccount(_form.Form):
     def _on_setup_form(self):
         """Hook
         """
-        self.data['bs-version'] = _BS_VER
+        self.title_css = 'text-center'
         self.area_footer_css = 'text-center'
         self.assets.extend([
-            'auth_ui_password@js/form.js',
             'twitter-bootstrap-{}'.format(_BS_VER),
-            'font-awesome',
+            'font-awesome-4',
         ])
 
     def _on_setup_widgets(self):
@@ -247,13 +243,12 @@ class SetNewPassword(_form.Form):
         if not _RESET_TOKENS_POOL.has(self.attr('token')):
             raise RuntimeError('Invalid token')
 
-        self.data['bs-version'] = _BS_VER
+        self.title_css = 'text-center'
         self.area_footer_css = 'text-center'
         self.title = _lang.t('auth_ui_password@reset_password')
         self.assets.extend([
-            'auth_ui_password@js/form.js',
             'twitter-bootstrap-{}'.format(_BS_VER),
-            'font-awesome',
+            'font-awesome-4',
         ])
 
     def _on_setup_widgets(self):
@@ -278,6 +273,10 @@ class SetNewPassword(_form.Form):
             h_size_label=True,
             required=True,
         ))
+
+        submit_btn = self.get_widget('action_submit')
+        submit_btn.value = _lang.t('auth_ui_password@reset_password')
+        submit_btn.icon = 'fa fa-key'
 
     def _on_validate(self):
         """Hook
