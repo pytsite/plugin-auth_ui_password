@@ -20,7 +20,7 @@
       "auth_password",
       "assetman",
       "font_awesome>=2.0",
-      "form>=4.1",
+      "form>=4.5",
       "twitter_bootstrap",
       "widget"
     ]

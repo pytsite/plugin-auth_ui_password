@@ -12,7 +12,7 @@ def plugin_load():
     cache.create_pool('auth_ui_password.reset_password_tokens')
 
     assetman.register_package(__name__)
-    assetman.t_js(__name__ + '@**')
+    assetman.t_js(__name__, babelify=True)
 
 
 def plugin_install():

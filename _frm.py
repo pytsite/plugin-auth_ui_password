@@ -25,6 +25,7 @@ class SignIn(_form.Form):
         self.assets.extend([
             'twitter-bootstrap-{}'.format(_BS_VER),
             'font-awesome-4',
+            'auth_ui_password@form.js'
         ])
 
     def _on_setup_widgets(self):
@@ -89,6 +90,7 @@ class SignUp(_form.Form):
         self.assets.extend([
             'twitter-bootstrap-{}'.format(_BS_VER),
             'font-awesome-4',
+            'auth_ui_password@form.js'
         ])
 
     def _on_setup_widgets(self):

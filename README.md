@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.5 (2018-07-16)
+
+Support of `form-4.5`.
+
+
 ### 2.4.1 (2018-06-23)
 
 Reset password form CSS fixed.
