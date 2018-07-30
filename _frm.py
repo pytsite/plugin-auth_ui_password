@@ -5,7 +5,7 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 from pytsite import reg as _reg, router as _router, lang as _lang, cache as _cache, util as _util, tpl as _tpl, \
-    mail as _mail, http as _http
+    mail as _mail
 from plugins import form as _form, widget as _widget, auth as _auth
 
 _BS_VER = _reg.get('auth_ui_password.twitter_bootstrap_version', 4)
@@ -307,7 +307,7 @@ class SetNewPassword(_form.Form):
 
             _router.session().add_success_message(_lang.t('auth_ui_password@reset_password_success'))
 
-            return _http.RedirectResponse(_router.rule_url('auth_ui@sign_in', {'driver': 'password'}))
+            self.redirect = _router.rule_url('auth_ui@sign_in', {'driver': 'password'})
 
         except _auth.error.UserNotFound:
             raise RuntimeError('Invalid token')

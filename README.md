@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.6 (2018-07-30)
+
+Support of `form-4.8`.
+
+
 ### 2.5.1 (2018-07-16)
 
 `plugin.json` fixed.
