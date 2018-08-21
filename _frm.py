@@ -60,7 +60,7 @@ class SignIn(_form.Form):
             self.add_widget(_widget.static.Text(
                 uid='sign_up_link',
                 weight=30,
-                title=_lang.t('auth_ui_password@sign_in_form_propose', {'url': sign_up_url}),
+                text=_lang.t('auth_ui_password@sign_in_form_propose', {'url': sign_up_url}),
                 h_size='col col-sm-6' if _BS_VER == 4 else 'col-sm-6 col-sm-offset-3',
                 h_size_row_css='justify-content-center' if _BS_VER == 4 else '',
                 css='text-center',
@@ -70,7 +70,7 @@ class SignIn(_form.Form):
         self.add_widget(_widget.static.Text(
             uid='reset_pw_link',
             weight=40,
-            title=_lang.t('auth_ui_password@reset_password_propose', {'url': reset_pw_url}),
+            text=_lang.t('auth_ui_password@reset_password_propose', {'url': reset_pw_url}),
             h_size='col col-sm-6' if _BS_VER == 4 else 'col-sm-6 col-sm-offset-3',
             h_size_row_css='justify-content-center' if _BS_VER == 4 else '',
             css='text-center',
@@ -156,7 +156,7 @@ class SignUp(_form.Form):
         self.add_widget(_widget.static.Text(
             uid='sign_in_link',
             weight=60,
-            title=_lang.t('auth_ui_password@sign_up_form_propose', {'url': sign_in_url}),
+            text=_lang.t('auth_ui_password@sign_up_form_propose', {'url': sign_in_url}),
             h_size='col col-sm-6' if _BS_VER == 4 else 'col-sm-6 col-sm-offset-3',
             h_size_row_css='justify-content-center' if _BS_VER == 4 else '',
             css='text-center',

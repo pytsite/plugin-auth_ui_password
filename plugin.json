@@ -1,6 +1,6 @@
 {
   "name": "auth_ui_password",
-  "version": "2.7",
+  "version": "2.8",
   "description": {
     "en": "Password Authentication UI Driver",
     "ru": "Password Authentication UI Driver",
@@ -22,7 +22,7 @@
       "font_awesome>=2.0",
       "form>=4.12",
       "twitter_bootstrap",
-      "widget>=2.8"
+      "widget>=2.11"
     ]
   }
 }
