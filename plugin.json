@@ -1,6 +1,6 @@
 {
   "name": "auth_ui_password",
-  "version": "2.8",
+  "version": "3.0",
   "description": {
     "en": "Password Authentication UI Driver",
     "ru": "Password Authentication UI Driver",
@@ -8,21 +8,18 @@
   },
   "url": "https://github.com/pytsite/plugin-auth_ui_password",
   "author": {
-    "name": "Alexander Shepetko",
+    "name": "Oleksandr Shepetko",
     "email": "a@shepetko.com",
     "url": "https://shepetko.com"
   },
   "requires": {
-    "pytsite": ">=7.17",
-    "plugins": [
-      "auth>=2.1",
-      "auth_ui>=3.2",
-      "auth_password",
-      "assetman",
-      "font_awesome>=2.0",
-      "form>=4.12",
-      "twitter_bootstrap",
-      "widget>=2.11"
-    ]
+    "pytsite": "8.x",
+    "plugins": {
+      "auth": "3.x",
+      "auth_ui": "4.x",
+      "auth_password": "1.x",
+      "form": "5.x",
+      "widget": "3.x"
+    }
   }
 }

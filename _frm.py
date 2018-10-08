@@ -1,6 +1,6 @@
 """PytSite Auth UI Password Plugin Forms
 """
-__author__ = 'Alexander Shepetko'
+__author__ = 'Oleksandr Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
@@ -22,11 +22,6 @@ class SignIn(_form.Form):
         """
         self.title_css = 'text-center'
         self.area_footer_css = 'text-center'
-        self.assets.extend([
-            'twitter-bootstrap-{}'.format(_BS_VER),
-            'font-awesome-4',
-            'auth_ui_password@form.js'
-        ])
 
     def _on_setup_widgets(self):
         """Hook
@@ -87,11 +82,6 @@ class SignUp(_form.Form):
         """
         self.title_css = 'text-center'
         self.area_footer_css = 'text-center'
-        self.assets.extend([
-            'twitter-bootstrap-{}'.format(_BS_VER),
-            'font-awesome-4',
-            'auth_ui_password@form.js'
-        ])
 
     def _on_setup_widgets(self):
         """Hook
@@ -194,10 +184,6 @@ class RestoreAccount(_form.Form):
         """
         self.title_css = 'text-center'
         self.area_footer_css = 'text-center'
-        self.assets.extend([
-            'twitter-bootstrap-{}'.format(_BS_VER),
-            'font-awesome-4',
-        ])
 
     def _on_setup_widgets(self):
         """Hook
@@ -249,10 +235,6 @@ class SetNewPassword(_form.Form):
         self.title_css = 'text-center'
         self.area_footer_css = 'text-center'
         self.title = _lang.t('auth_ui_password@reset_password')
-        self.assets.extend([
-            'twitter-bootstrap-{}'.format(_BS_VER),
-            'font-awesome-4',
-        ])
 
     def _on_setup_widgets(self):
         self.add_widget(_widget.input.Password(
