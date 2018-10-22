@@ -1,6 +1,6 @@
 {
   "name": "auth_ui_password",
-  "version": "3.0.1",
+  "version": "3.1",
   "description": {
     "en": "Password Authentication UI Driver",
     "ru": "Password Authentication UI Driver",
@@ -19,7 +19,7 @@
       "auth_ui": "4.x",
       "auth_password": "1.x",
       "form": "5.x",
-      "widget": "3.x"
+      "widget": "4.x"
     }
   }
 }
