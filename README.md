@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 3.1.1 (2018-10-23)
+
+Forms redirection issue fixed.
+
+
 ### 3.1 (2018-10-22)
 
 Support of `widget-4.x`.
