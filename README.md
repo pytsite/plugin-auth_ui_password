@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 3.2 (2019-07-12)
+
+Support of `pytsite-9.0`.
+
+
 ### 3.1.1 (2018-10-23)
 
 Forms redirection issue fixed.
